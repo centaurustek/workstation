@@ -1,7 +1,7 @@
 #$packagename = ['wget','telnet','tree']
 node 'client.localdomain' {
 class {"httpd":
-ensure => removed
+ensure => installed
 }
 
 #$packagename = ['wget','telnet','tree']
