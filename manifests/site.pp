@@ -1,5 +1,9 @@
 #$packagename = ['wget','telnet','tree']
 node 'client.localdomain' {
+class {"httpd":
+ensure => removed
+}
+
 #$packagename = ['wget','telnet','tree']
 #$package = 'telnet'
 #include casecondition 
